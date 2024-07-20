@@ -13,4 +13,5 @@ python sample_diffusion.py -r models/ldm/celeba256/model.ckpt -l output_samples/
 
 # SqueezeNet Cosine Similarity (SqCS)
 We develop SqCS to assess the quality of generated images across several inference steps and to determine the best inference step. It address the several drawbacks of existing popular metrics like FID,SSIM, and PSNR.
+![SqCS](flowchart_sqcs.png)
 

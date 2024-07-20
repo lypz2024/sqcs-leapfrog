@@ -12,7 +12,7 @@ The Leapfrog Solver functions as depicted below:
 
 ### Features
 
-- **Efficient Sampling**: Accelerates sampling in Stable Diffusion models.
+- **Efficient Sampling**: Accelerates sampling
 - **Versatile Application**: Generates high-quality samples for both class-conditional and unconditional (without class) images.
 
 ### Usage
@@ -23,7 +23,7 @@ python imagenet_sampling.py
 
 To generate unconditional images for datasets like CelebAHQ, FFHQ, LSUN Churches, and LSUN Bedrooms, use:
 
-python sample_diffusion.py -r <path for model.ckpt> -l <output directory for sampled images> -n <number of samples> --batch_size <batch size> -c <number of inference steps> -e <eta>
+python sample_diffusion.py -r "path for model.ckpt" -l "output directory for sampled images" -n "number of samples" --batch_size "batch size" -c "number of inference steps" -e "eta"
 
 Example to generate samples of CelebAHQ dataset:
 python sample_diffusion.py -r models/ldm/celeba256/model.ckpt -l output_samples/4steps -n 50000 --batch_size 100 -c 4 -e 0
@@ -39,7 +39,7 @@ We compute SqCS metric as shown in this flowchart.
 
 To compute SqCS metric between real and generated images, run:
 
-python sqcs.py <directory of real images> <directory of generated images> --batch_size <batch size>
+python sqcs.py "directory of real images" "directory of generated images" --batch_size "batch size"
 
 Example:
 python sqcs.py data/real_images/lsun_churches /output_samples/lsun_churches --batch_size 500

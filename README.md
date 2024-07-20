@@ -54,7 +54,7 @@ python sample_diffusion.py -r <path for model.ckpt> -l <output directory for sam
 ```shell script
 python sample_diffusion.py -r models/ldm/celeba256/model.ckpt -l output_samples/4steps -n 50000 --batch_size 100 -c 4 -e 0
 ```
-- We utilize the prede-trained models weights of LDMs (Latent diffusion models) from  [https://github.com/CompVis/latent-diffusion](https://github.com/CompVis/latent-diffusion).
+- We utilized the pre-trained models weights of LDMs (Latent diffusion models) from  [https://github.com/CompVis/latent-diffusion](https://github.com/CompVis/latent-diffusion).
 
 ## SqueezeNet Cosine Similarity (SqCS)
 

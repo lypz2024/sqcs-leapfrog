@@ -27,7 +27,7 @@ To generate unconditional images for datasets like CelebAHQ, FFHQ, LSUN Churches
 
 ```shell script
 python sample_diffusion.py -r <path for model.ckpt> -l <output directory for sampled images> -n <number of samples to be generated> --batch_size <batch size> -c <number of inference steps> -e <eta>
-```shell script
+```
 
 Example to generate samples of CelebAHQ dataset:
 ```shell script

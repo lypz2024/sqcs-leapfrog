@@ -39,9 +39,13 @@ We compute SqCS metric as shown in this flowchart.
 
 To compute SqCS metric between real and generated images, run:
 
-- python sqcs.py "directory of real images" "directory of generated images" --batch_size "batch size"
+```shell script
+python sqcs.py "directory of real images" "directory of generated images" --batch_size "batch size"
+```
 
 Example:
-- python sqcs.py data/real_images/lsun_churches output_samples/lsun_churches --batch_size 500
+```shell script
+python sqcs.py data/real_images/lsun_churches output_samples/lsun_churches --batch_size 500
+```
 
 

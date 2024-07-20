@@ -4,8 +4,10 @@
 
 We develop the Leapfrog Solver for faster sampling of diffusion models, achieving high-quality results in approximately 4 inference steps. 
 
-The figure below shows the images sampled on ImageNet datset.
-![Imagenet samples](Imagenet_samples.png)
+<div align="center">
+    <img src="Imagenet_samples.png" alt="Imagenet samples">
+    <p>The figure above shows the images sampled on ImageNet dataset.</p>
+</div>
 
 The figure below shows the unconditional images sampled on LSUN Bedrooms, LSUN Churches, CelebAHQ, and FFHQ datsets.
 ![Unconditional_samples](unconditional_samples.png)

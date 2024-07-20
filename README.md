@@ -2,9 +2,17 @@
 
 ## Leapfrog Solver
 
-We develop the Leapfrog Solver for faster sampling of diffusion models, achieving high-quality results in approximately 4 inference steps. See this figure that shows the comparison of sampled images by various solvers in 4 inference steps.
+We develop the Leapfrog Solver for faster sampling of diffusion models, achieving high-quality results in approximately 4 inference steps. 
 
-![Sampled Images](sampled_images.png)
+The figure below shows the images sampled on ImageNet datset.
+![Imagenet samples](Imagenet_samples.png)
+
+The figure below shows the unconditional images sampled on LSUN Bedrooms, LSUN Churches, CelebAHQ, and FFHQ datsets.
+![Unconditional_samples](unconditional_samples.png)
+
+See this figure that shows the comparison of sampled images by various solvers in 4 inference steps.
+
+![Samples od all solvers](samples_all_solvers.png)
 
 The Leapfrog Solver functions as depicted below:
 

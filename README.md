@@ -9,16 +9,21 @@ We develop the Leapfrog Solver for faster sampling of diffusion models, achievin
     <p>The figure above shows the images sampled on ImageNet dataset.</p>
 </div>
 
-The figure below shows the unconditional images sampled on LSUN Bedrooms, LSUN Churches, CelebAHQ, and FFHQ datsets.
-![Unconditional_samples](unconditional_samples.png)
+<div align="center">
+    <img src="unconditional_samples.png" alt="Unconditional samples">
+    <p>The figure above shows the unconditional images sampled on LSUN Bedrooms, LSUN Churches, CelebAHQ, and FFHQ datasets.</p>
+</div>
 
-See this figure that shows the comparison of sampled images by various solvers in 4 inference steps.
-
-![Samples od all solvers](samples_all_solvers.png)
+<div align="center">
+    <img src="samples_all_solvers.png" alt="Samples of all solvers">
+    <p>The figure above shows the comparison of sampled images by various solvers in 4 inference steps.</p>
+</div>
 
 The Leapfrog Solver functions as depicted below:
 
-![Leapfrog Solver](leapfrog_solver.png)
+<div align="center">
+    <img src="leapfrog_solver.png" alt="Leapfrog Solver">
+</div>
 
 ### Features
 
@@ -56,7 +61,10 @@ We utilize the prede-trained models weights of LDMs (Latent diffusion models) fr
 We develop SqCS to assess the quality of generated images across several inference steps and to determine the best inference step. It address the several drawbacks of existing popular metrics like FID,SSIM, and PSNR.
 
 We compute SqCS metric as shown in this flowchart.
-![SqCS](flowchart_sqcs.png)
+
+<div align="center">
+    <img src="flowchart_sqcs.png" alt="SqCS">
+</div>
 
 ### Usage
 

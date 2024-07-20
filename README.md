@@ -1,17 +1,41 @@
-# SqueezeNet Cosine Similarity for Faster Sampling with Leapfrog Solver
+# Leapfrog Solver and SqueezeNet Cosine Similarity (SqCS) for Faster and Quality Sampling
 
-# Leapfrog Solver
-We develop Leapfrog Solver for faster sampling of diffusion models in ~ 4 inference steps.
+## Leapfrog Solver
+
+We developed the Leapfrog Solver for faster sampling of diffusion models, achieving high-quality results in approximately 4 inference steps.
+
 ![Sampled Images](sampled_images.png)
-Our leapfrog solver works as shown in this figure ![Leapfrog solver](leapfrog_solver.png)
-We apply leapfrog solver to Stable Diffusion models to accelarate sampling and generate high quality samples for both class conditional and unconditional (without class) images. If you want to generate ImageNet samples (conditional images), run this command
+
+The Leapfrog Solver functions as depicted below:
+
+![Leapfrog Solver](leapfrog_solver.png)
+
+### Features
+
+- **Efficient Sampling**: Accelerates sampling in Stable Diffusion models.
+- **Versatile Application**: Generates high-quality samples for both class-conditional and unconditional (without class) images.
+
+### Usage
+
+To generate ImageNet samples (conditional images), run:
+
 python imagenet_sampling.py
-If you want to generate unconditional images of datasets like - CelebAHQ, FFHQ, LSUN churches, and LSUN Bedrooms, run this command
+
+To generate unconditional images for datasets like CelebAHQ, FFHQ, LSUN Churches, and LSUN Bedrooms, use:
 python sample_diffusion.py -r <path for model.ckpt> -l <output directory for sampled images> -n <number of samples> --batch_size <batch size> -c <number of inference steps> -e <eta>
-An example is shown below
+Example to generate samples of CelebAHQ dataset:
 python sample_diffusion.py -r models/ldm/celeba256/model.ckpt -l output_samples/4steps -n 50000 --batch_size 100 -c 4 -e 0
 
-# SqueezeNet Cosine Similarity (SqCS)
+## SqueezeNet Cosine Similarity (SqCS)
+
 We develop SqCS to assess the quality of generated images across several inference steps and to determine the best inference step. It address the several drawbacks of existing popular metrics like FID,SSIM, and PSNR.
+We compute SqCS metric as shown in this flowchart.
 ![SqCS](flowchart_sqcs.png)
+
+### Usage
+
+To compute SqCS metric between real and generated images, run:
+python sqcs.py <directory of real images> <directory of generated images> --batch_size <batch size>
+Example:
+python sqcs.py data/real_images/lsun_churches /output_samples/lsun_churches --batch_size 500
 

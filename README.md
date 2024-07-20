@@ -16,6 +16,12 @@ The Leapfrog Solver functions as depicted below:
 - **Versatile Application**: Generates high-quality samples for both class-conditional and unconditional (without class) images.
 
 ### Usage
+Set up a conda environment and install below libraries:
+
+```shell script
+pip install transformers==4.19.2 scann kornia==0.6.4 torchmetrics==0.6.0
+pip install git+https://github.com/arogozhnikov/einops.git
+```
 
 To generate ImageNet samples (conditional images), run:
 

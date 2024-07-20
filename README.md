@@ -2,7 +2,7 @@
 
 ## Leapfrog Solver
 
-We develop the Leapfrog Solver for faster sampling of diffusion models, achieving high-quality results in approximately 4 inference steps.
+We develop the Leapfrog Solver for faster sampling of diffusion models, achieving high-quality results in approximately 4 inference steps. See this figure that shows the comparison of sampled images by various solvers in 4 inference steps.
 
 ![Sampled Images](sampled_images.png)
 

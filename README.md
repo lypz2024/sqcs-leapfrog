@@ -19,14 +19,20 @@ The Leapfrog Solver functions as depicted below:
 
 To generate ImageNet samples (conditional images), run:
 
+```shell script
 python imagenet_sampling.py
+```
 
 To generate unconditional images for datasets like CelebAHQ, FFHQ, LSUN Churches, and LSUN Bedrooms, use:
 
-- python sample_diffusion.py -r "path for model.ckpt" -l "output directory for sampled images" -n "number of samples" --batch_size "batch size" -c "number of inference steps" -e "eta"
+```shell script
+python sample_diffusion.py -r <path for model.ckpt> -l <output directory for sampled images> -n <number of samples to be generated> --batch_size <batch size> -c <number of inference steps> -e <eta>
+```shell script
 
 Example to generate samples of CelebAHQ dataset:
-- python sample_diffusion.py -r models/ldm/celeba256/model.ckpt -l output_samples/4steps -n 50000 --batch_size 100 -c 4 -e 0
+```shell script
+python sample_diffusion.py -r models/ldm/celeba256/model.ckpt -l output_samples/4steps -n 50000 --batch_size 100 -c 4 -e 0
+```
 
 ## SqueezeNet Cosine Similarity (SqCS)
 

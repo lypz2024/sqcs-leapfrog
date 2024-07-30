@@ -32,7 +32,6 @@
 
 ### Usage
 - We implemented our Leapfrog Solver in the code bleow:
-- 
 ```shell script
 leapfrog.py
 ```  

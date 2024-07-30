@@ -31,6 +31,11 @@
 - **Versatile Application**: Generates high-quality samples for both class-conditional and unconditional (without class) images.
 
 ### Usage
+- We implemented our Leapfrog Solver in the code bleow:
+- 
+```shell script
+leapfrog.py
+```  
 - Set up a conda environment and install below libraries:
 
 ```shell script
